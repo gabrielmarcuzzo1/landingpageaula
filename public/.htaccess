@@ -1,0 +1,6 @@
+# Optional Apache configuration for cPanel: keep the form settings fresh.
+<IfModule mod_headers.c>
+  <Files "form-config.js">
+    Header set Cache-Control "no-store"
+  </Files>
+</IfModule>
